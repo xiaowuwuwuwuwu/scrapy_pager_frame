@@ -6,11 +6,6 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import csv
 
-import MySQLdb
-#db = MySQLdb.connect("localhost", "root", "123456", "spider", charset="utf8")
-
-from scrapy.mail import MailSender
-
 class SpiderPipeline(object):
 
     def open_spider(self, spider):
